@@ -7,6 +7,7 @@ const router = Router();
 const userController = new UserController();
 
 // Declaração de rotas
-router.get("/", userController.helloworld);
+router.get("/", (req, res)=>{ return res.json({hello: "world"})});
+router.post("/create_user", userController.create);
 
 export default router;
