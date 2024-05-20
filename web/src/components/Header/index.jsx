@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom" 
-import "./header.css"
+import styles from "./styles.module.css"
 
 export default function Header(){
     return (
         <header>
-            <div className="container">
+            <div className={styles.container}>
                 <h1>MarineLifeAware</h1>
 
                 <nav>
